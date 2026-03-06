@@ -20,4 +20,18 @@ void f2(int num)
     }
     printf("%d",reverse);
 }
-
+// כתבו פונקציה המקבלת מספר שלם וחיובי ומדפיסה תשובה בוליאנית האם המספר פלינדרום
+void f2(int num)
+{
+    int num1=num;
+    int reverse=0;
+    while (num1!=0)
+    {
+        reverse=reverse*10+num1%10;
+        num1=num1/10;
+    }
+    if (reverse==num)
+        printf("True");
+    else
+        printf("False");
+}
