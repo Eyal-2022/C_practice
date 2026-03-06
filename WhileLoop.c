@@ -9,3 +9,4 @@ void f1(int num)
     }
     printf("%d",i);
 }
+
