@@ -9,4 +9,15 @@ void f1(int num)
     }
     printf("%d",i);
 }
+// כתבו פונקציה המקבלת מספר שלם וחיובי הפונקציה תדפיס את המספר המתקבל בסדר ספרות הפוך. אם המספר מתחיל מ-0 היא תשמיט אותו
+void f2(int num)
+{
+    int reverse=0;
+    while (num!=0)
+    {
+        reverse=reverse*10+num%10;
+        num=num/10;
+    }
+    printf("%d",reverse);
+}
 
