@@ -3,3 +3,15 @@
 כתבו פונקציה המקבלת את ערכי שלוש הנגדים ומקור המתח. על הפונקציה לחשב ולהדפיס את
 א. הזרם השקול  ב. המתח על נגד שתיים  ג. ההספק של נגד שלוש
 */
+void f1(float r1,float r2,float r3,float E)
+{
+    float iTotal=0,rTotal=0,v2=0,p3=0;
+    rTotal=((r2*r3)/(r2+r3)+r1);
+    iTotal=E/rTotal;
+    printf("iTotal=%0.3f[A]\n",iTotal);
+    v2=E-(iTotal*r1);
+    printf("v2=%0.3f[v]\n",v2);
+    float v3=v2;
+    p3=(v3*v3)/r3;
+    printf("p3=%0.3f[w]\n",p3);
+}
